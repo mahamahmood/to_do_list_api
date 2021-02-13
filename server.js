@@ -28,6 +28,9 @@ app.get('/', (req, res)=>{
     res.send('Back is connected')
 });
 
+const todoController = require('./controllers/todos.js');
+
+app.use('/todos', todoController);
 
 
 /* Listener */
